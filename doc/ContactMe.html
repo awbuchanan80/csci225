@@ -10,8 +10,8 @@
         </iframe>
         <br>
         <form name="feedback">
-            <fieldset>
-                <legend>Feedback Form</legend>
+            <fieldset name="field">
+                <legend name="legend">Feedback Form</legend>
                     First Name: <input type="text" name="fname" placeholder="anonymous" required><br><br>
                     Last Name: <input type="text" name="lname" placeholder="anonymous" required><br><br>
                     Email Address: <input type="email" name="mail" placeholder="name@domain.com"><br><br>
@@ -31,12 +31,12 @@
 
                     <br><br>Please select your favorite website: 
                     <select size="1" name="website" id="website">
-                        <option disabled selected value>Select</option>
-                        <option value="Google">Google</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Twitter">Twitter</option>
-                        <option value="Time">Time</option>
-                        <option value="Instagram">Instagram</option>
+                        <option name="none" disabled selected value>Select</option>
+                        <option name="G" value="Google">Google</option>
+                        <option name="F" value="Facebook">Facebook</option>
+                        <option name="Tw" value="Twitter">Twitter</option>
+                        <option name="Ti" value="Time">Time</option>
+                        <option name="I" value="Instagram">Instagram</option>
                     </select>
 
                     <br><br>Please rate the website on a scale of 1-10: 
@@ -46,16 +46,11 @@
                     <br><br><textarea name="comment" rows="10" cols="40" placeholder="Please Enter any Additional Comments Here: "></textarea>
 
                     <br><br>If you entered the wrong information and need to reset, click here ->
-                    <input type="reset" value="Reset"></input>
+                    <input name="reset" type="reset" value="Reset"></input>
 
                     <br><br>If you are satisfied with your information, submit your form here -> 
                     <input type="submit" name="submit" value="Submit"></input>
-
             </fieldset>
         </form>
-
-
-
-
     </body>
 </html>
