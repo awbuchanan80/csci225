@@ -1,0 +1,80 @@
+div.introduction{
+    position: fixed;
+    padding: 2% 0% 0% 0%;
+}
+div.navbar{
+    display: block;
+    position: fixed;
+    z-index: 1;
+}
+
+div.navbar li {
+    display: inline-block;
+}
+
+footer{
+    position: fixed;
+}
+
+div.introduction p{
+    float: left;
+    width: 1400px;
+}
+
+div.introduction img{
+    float: right;
+    padding-right: 295px;
+}
+
+div.assignment{
+    position: absolute;
+    top: 160px;
+    right: 20px;
+}
+
+div.schedule{
+    padding: 0% 0% 0% 0%;
+}
+
+div.portfolio{
+    padding: 19% 0% 0% 0%;
+}
+
+p{
+    font-family: Andika;
+    line-height: 25px;
+    text-align: center;
+}
+
+#Contact_Information_Section {
+    text-align: left;
+}
+
+@font-face {
+    font-family: Andika;
+    src: url(https://fonts.googleapis.com/css?family=Andika);
+}
+
+ul, li, ol{
+    color:cornflowerblue;
+    font-weight: 600;
+}
+
+ol, ul{
+    list-style-image: url(/img/Kame.png);
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px cornflowerblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: cornflowerblue;
+    text-shadow: 1px 1px blue;
+}
