@@ -135,6 +135,6 @@ a:active{
     color:mediumslateblue;
 }
 
-#gone{
+#gone, #poof{
     visibility: hidden;
 }
