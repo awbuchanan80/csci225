@@ -10,7 +10,7 @@ div.navbar{
     display: block;
     position: fixed;
     z-index: 1;
-
+    background-image: linear-gradient(white, lightblue);
 }
 
 div.navbar li {
@@ -36,7 +36,7 @@ div.introduction img{
 div.assignment{
     position: absolute;
     top: 160px;
-    right: 20px;
+    right: 70px;
 }
 
 div.schedule{
@@ -99,4 +99,45 @@ body{
 
 h1{
     border-radius: 25px black;
+    transition: ease-in-out 1s;
+    width: 200px;
+}
+
+p::first-letter{
+    color:cornflowerblue;
+}
+
+#firstP{
+    box-shadow: 5px 10px;
+}
+
+tr:nth-child(even){
+    background-color: cornflowerblue;
+}
+
+table, td{
+    border: 1px solid;
+    padding: 10px;
+    vertical-align: middle;
+    empty-cells: show;
+}
+
+h1:hover{
+    transform: scale(0.9);
+}
+
+a:link{
+    color:cornflowerblue;
+}
+
+a:visited{
+    color:blue;
+}
+
+a:active{
+    color:mediumslateblue;
+}
+
+#gone{
+    visibility: hidden;
 }
