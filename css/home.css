@@ -1,7 +1,3 @@
-body{
-    background-image: url('/img/Grogu.jpg');
-}
-
 div.introduction{
     position: fixed;
     padding: 2% 0% 0% 0%;
@@ -73,8 +69,8 @@ ul, li, ol{
     font-weight: 600;
 }
 
-ol, ul{
-    list-style-image: url('/img/Kame.png');
+#dragon{
+    list-style-image: url("../img/star.png");
 }
 
 h1{
@@ -93,7 +89,8 @@ a:hover{
 }
 
 body{
-    background-image: url(Grogu.jpg);
+    background-color: aqua;
+    background-image: url("../img/Back.jpg");
     z-index: 2;
 }
 
