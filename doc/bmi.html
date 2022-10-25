@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="../css/bmi.css">
+    </head>
+    <body>
+        <div class="grid-container">
+
+            <div class="bmi">
+                <h1>English BMI Calculator</h1>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required></input><br>
+                <p id="message">
+
+                </p>
+                <script>
+                    //event handler
+                    function welcome(){
+                        var name = document.getElementById('name').value;
+                        document.getElementById('message').innerHTML = "Hey <b>"+name+"</b> thanks for using our BMI calculator!";
+                    }
+    
+    
+                    //event ---> event handler
+                    var fE = document.getElementById('name');
+                    fE.addEventListener('blur', welcome, false);
+    
+                </script>
+                <input type="number" name="weight" placeholder="Enter Your Weight" required></input> Weight in Pounds<br><br>
+                <input type="number" name="height" placeholder="Enter Your Height" required></input> Height in Inches<br><br>
+                <select id="agegroup">
+                    <option>20 Below</option>
+                    <option>21-30</option>
+                    <option>31-50</option>
+                    <option>51-70</option>
+                </select> Age <br>
+                <p id="news">
+
+                </p>
+                <script>
+                    //event handler
+                    function newsite(){
+                        let ages = document.getElementById('agegroup').value;
+                        let information = "";
+                        if(ages=="20 Below"){
+                            information = "Since you are below 20 years of age, please determine your weight category with the CDC's BMI Percentile Chart, located here: https://www.cdc.gov/growthcharts/data/set1clinical/cj41l024.pdf";
+                        }
+                        document.getElementById('news').textContent=information.toString();
+                    }
+                    document.getElementById('agegroup').addEventListener('change', newsite, false);
+                </script>
+
+                <input type="submit" name="ComputeBMI" value="Compute BMI" onclick="calculateBMI()"></input><br>
+                <p id="newBMI">
+
+                </p>
+                <script>
+                    function calculateBMI(){
+                        var w = parseFloat(document.getElementsByName('weight')[0].value);
+                        var h = parseFloat(document.getElementsByName('height')[0].value);
+                        var BMI = parseFloat((w*703)/(h*h)).toFixed(2);
+                        document.getElementById('newBMI').textContent = "Your BMI is "+BMI;
+                        if(BMI <= 18.49){
+                            document.getElementById('newBMI').textContent = "Your BMI is "+BMI;
+                            document.getElementById("slider").animate([{transform: 'translate(0,0)'},{transform: 'translate(80px,0)'}],{duration: 1500, fill: "forwards"});
+                            document.getElementById("miipic").animate([{transform: 'scale(1.0)'},{transform: 'scale(1.0)'}],{duration: 1500, fill: "forwards"});
+                        }else if(BMI >= 18.50 && BMI <= 24.9){
+                            document.getElementById('newBMI').textContent = "Your BMI is "+BMI;
+                            document.getElementById("slider").animate([{transform: 'translate(0,0)'},{transform: 'translate(185px,0)'}],{duration: 1500, fill: "forwards"});
+                            document.getElementById("miipic").animate([{transform: 'scale(1.0)'},{transform: 'scale(2.0, 1.0)'}],{duration: 1500, fill: "forwards"});
+                        }else if(BMI >= 25.00 && BMI <= 27.9){
+                            document.getElementById('newBMI').textContent = "Your BMI is "+BMI;
+                            document.getElementById("slider").animate([{transform: 'translate(0,0)'},{transform: 'translate(185px,0)'}],{duration: 1500, fill: "forwards"});
+                            document.getElementById("miipic").animate([{transform: 'scale(1.0)'},{transform: 'scale(3.0, 1.0)'}],{duration: 1500, fill: "forwards"});
+                        }else if(BMI >= 28.00 && BMI <= 29.9){
+                            document.getElementById('newBMI').textContent = "Your BMI is "+BMI+" and you are in the overweight or obesity category";
+                            document.getElementById("slider").animate([{transform: 'translate(0,0)'},{transform: 'translate(295px,0)'}],{duration: 1500, fill: "forwards"});
+                            document.getElementById("miipic").animate([{transform: 'scale(1.0)'},{transform: 'scale(4.0, 1.0)'}],{duration: 1500, fill: "forwards"});
+                            window.open('http://www.nhlbi.nih.gov/health/public/heart/obesity/lose_wt/control.htm', 'newwindow');
+                        }else{
+                            document.getElementById('newBMI').textContent = "Your BMI is "+BMI+" and you are in the overweight or obesity category";
+                            document.getElementById("slider").animate([{transform: 'translate(0,0)'},{transform: 'translate(375px,0)'}],{duration: 1500, fill: "forwards"});
+                            document.getElementById("miipic").animate([{transform: 'scale(1.0)'},{transform: 'scale(5.0, 1.0)'}],{duration: 1500, fill: "forwards"});
+                            window.open('http://www.nhlbi.nih.gov/health/public/heart/obesity/lose_wt/control.htm', 'newwindow');
+                        }
+                    }
+                </script>
+            </div>
+    
+            <div class="miiScale">
+                <img src="../img/rect.png" id = "slider" class="slider" width="25" height="45" alt="slider">
+            <div class="mii">
+                <ul>
+                    <li>Underweight</li>
+                    <li>Normal Weight</li>
+                    <li>Overweight</li>
+                    <li>Obese</li>
+                </ul>
+            </div>
+            <img src="../img/mii.png" id= "miipic" class="miipic" width="120" height="250" alt="Mii">
+          </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

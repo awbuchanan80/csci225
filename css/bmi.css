@@ -1,0 +1,41 @@
+body{
+    background-image: url("../img/Back.jpg");
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.bmi{
+    padding-left: 200px;
+}
+
+div.miiScale{
+    float: right;
+    padding-right: 450px;
+    width: 500px;
+}
+
+div.mii{
+    background-image: linear-gradient(to right, red, orange, yellow, green);
+    position: relative;
+}
+
+ul > li {
+    display: inline-block;
+    padding: 8px;
+    z-index: 1;
+  }
+
+
+.miipic {
+    float: middle;
+    padding-left: 160px;
+  }
+  .slider {
+    opacity: 0.5;
+    position: absolute;
+    z-index: 3;
+    padding-top: 11px;
+  }
