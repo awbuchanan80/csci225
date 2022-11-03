@@ -44,9 +44,9 @@ function calculate() {
 
   
   var table =
-    '<p id ="monthPayment">Monthly Payment : $' +
+    '<p id ="monthPayment"><b>Monthly Payment : $' +
     monthPayment.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",") +
-    "</p>";
+    "</b></p>";
   table += "<table>";
   table +=
     "<tr>" +
