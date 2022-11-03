@@ -26,7 +26,7 @@ body {
     width: 450px;
     margin: 0px;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: lightblue;
   }
   div.loanInformation {
     opacity: 0.9;
@@ -38,7 +38,7 @@ body {
   }
   #nav {
     top: 0px;
-  
+
     float: left;
     margin: 0;
     padding: 0;
@@ -66,13 +66,17 @@ body {
     background-color: cornflowerblue;
     border: 0.5px solid cornflowerblue;
   }
+
   #finalTable {
     visibility: hidden;
+    padding-left: 1400px;
+    padding-top: 24px;
   }
   
   div.navbar li {
     display: inline;
   }
+  
   div.navbar input {
     width: 125px;
     margin: 0px auto;
