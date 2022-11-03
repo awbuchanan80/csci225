@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Real Estate Company</title>
+    <link rel="stylesheet" type="text/css" href="../css/realestate.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul id="nav">
+        <li><input id="btnbuy" type="button" value="Buy" /></li>
+        <li><input id="btnsale" type="button" value="Sale" /></li>
+        <li><input id="btnloan" type="button" value="Loan" /></li>
+        <li><input id="btabout" type="button" value="About" /></li>
+      </ul>
+    </div>
+    <div id="finalTable"></div>
+    <div id="form">
+      <div class="loanInformation">
+        <p>Loan Information</p>
+        <label for="loanInput">Loan Amount:</label>
+        <input type="text" id="loanInput" name="loanInput" required />$
+        <br />
+        <label for="interestInput">Interest Rate:</label>
+        <input type="text" id="interestInput" name="interestInput" required />%
+        <br />
+        <label for="termInput">Loan Term:</label>
+        <input type="text" id="termInput" name="termInput" required />Years
+        <br />
+        <label for="startDate">Start Date:</label>
+        <select id="startMonth">
+          <option>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+        <select id="startYear">
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+          <option>2028</option>
+          <option>2029</option>
+          <option>2030</option>
+          <option>2031</option>
+          <option>2032</option>
+          <option>2033</option>
+          <option>2034</option>
+          <option>2035</option>
+          <option>2036</option>
+          <option>2037</option>
+          <option>2038</option>
+          <option>2039</option>
+          <option>2040</option></select
+        ><br />
+        <label for="results">Show results by:</label>
+        <select id="results">
+          <option>Year</option></select
+        ><br />
+        <input id="btnCalculate" type="submit" value="Calculate" />
+      </div>
+    </div>
+    <script src="../js/realestate.js"></script>
+  </body>
+</html>

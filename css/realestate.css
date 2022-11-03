@@ -1,0 +1,81 @@
+body {
+    background-image: url("../img/Estate.jpg");
+    background-size: cover;
+  }
+  #form {
+    visibility: hidden;
+  }
+  
+  #monthPayment {
+    background-color: transparent;
+    color: white;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+  
+    text-align: right;
+    padding: 9px;
+  }
+  #btnCalculate {
+    width: 450px;
+    background-color: cornflowerblue;
+  }
+  p {
+    width: 450px;
+    margin: 0px;
+    text-align: center;
+    background-color: cornflowerblue;
+  }
+  div.loanInformation {
+    opacity: 0.9;
+    position: absolute;
+    top: 50px;
+    left: 950px;
+    width: 450px;
+    background-image: linear-gradient(white, lightblue);
+  }
+  #nav {
+    top: 0px;
+  
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 625px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  td {
+    border: 0.5px solid cornflowerblue;
+    opacity: 0.95;
+    background-image: linear-gradient(white, lightblue);
+    width: 125px;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  table {
+    opacity: 0.95;
+    top: 150px;
+    left: 150px;
+    background-color: lavender;
+  }
+  th {
+    opacity: 0.95;
+    background-color: cornflowerblue;
+    border: 0.5px solid cornflowerblue;
+  }
+  #finalTable {
+    visibility: hidden;
+  }
+  
+  div.navbar li {
+    display: inline;
+  }
+  div.navbar input {
+    width: 125px;
+    margin: 0px auto;
+    background-color: cornflowerblue;
+    color: black;
+  }
