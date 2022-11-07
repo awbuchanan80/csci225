@@ -1,3 +1,4 @@
+//js file for loan calculator
 document.getElementById("btnloan").addEventListener("click", loan);
 document.getElementById("btnCalculate").addEventListener("click", calculate);
 
